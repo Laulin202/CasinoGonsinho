@@ -15,18 +15,27 @@ float DosColores::jugar(float gonzosApostar) {
     cout << "Tu numero aleatorio es: "<< numeroJugador <<"\n" << "Tu color: " <<colorJugador << "\n";
     cout << "Numero casino: "<< numeroCasino <<"\n" << "Color casino: " <<colorCasino << "\n";
     float gonzosResulado = calcularResultado(gonzosApostar);
+    //TODO borrar el cout de prueba
     return gonzosResulado;
 }
 
 float DosColores::calcularResultado(float gonzosApostar) {
     cout << "Por implementar \n";
     // Si coincide tanto el valor del dado como el color, el usuario ganará 4 veces lo apostado
-
+    if(colorCasino == colorJugador && numeroCasino == numeroJugador){
+        return gonzosApostar*4;
+    }
    // coincide sólo con el valor del dado ganará 0.5 veces lo apostado
-
+    else if(numeroJugador == numeroCasino){
+        return gonzosApostar*0.5;
+    }
    // no gana ni pierde
-
+    else if(colorCasino == colorJugador){
+        return 0;
+    }
    // pierde todo lo apostado
+   else
+       return -1 * gonzosApostar;
 }
 
 DosColores::~DosColores() {

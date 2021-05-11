@@ -1,5 +1,5 @@
 //
-// Created by lufe0 on 7/05/2021.
+// Created by lufe0 on 7/05/2021. :)
 //
 
 #include "Casino.h"
@@ -19,24 +19,27 @@ void Casino::agregarJuego(Juego * juego) {
 
 void Casino::agregarJugador(Jugador *pJugador) {
     // Se agrega el jugador al mapa de jugadores del casino
-   cout << "Por implementar \n";
+   jugadoresMap[pJugador->getId()] = pJugador;
+   pJugador->mostrarInfo();
 }
 
 bool Casino::verExisteJugador(long id) {
 
-    // Si el jugador se encuentra en el mapa retorna true, de lo contrario retorna false
-    cout << "Por implementar \n";
+   if(jugadoresMap[id] == nullptr){
+       return false;
+   }
+    return true;
 }
 
+// Retora el apuntador a jugador.
 Jugador *Casino::consultarJugador(long id) {
-    return jugadoresMap[id]; // Retora el apuntador a jugador.
+    return jugadoresMap[id];
 }
 
 double Casino::convertirPesosAGonzos(double dinero) {
-
     // Cada 10 mil pesos equivalen a 100 Gonzos
-    cout << "Por implementar \n";
-    return 0;
+    // aplicar una potente regla de 3
+    return dinero/100;
 }
 
 vector<Juego *> &Casino::consultarJuegos() {
@@ -44,15 +47,16 @@ vector<Juego *> &Casino::consultarJuegos() {
 }
 
 void Casino::retirarJugador(long id) {
-    // Pendiente por implementar
     // Investigue como remover el jugador del mapa
     cout << "Fase dos, por hacer \n";
+    //TODO
 }
 
 
 double Casino::convertirGonzosPesos(float gonzos) {
     // Pendiente por implementar
     cout << "Fase dos, por hacer \n";
+    //TODO
     return 0;
 }
 

@@ -51,7 +51,7 @@ void View::pedirUsuario(){
 }
 
 void View:: jugarView(long idJugador) {
-    int opcion;
+    int opcion, opJuego;
     float cantGonzos;
     int idJuego;
     do{
@@ -62,7 +62,24 @@ void View:: jugarView(long idJugador) {
             } while (cantGonzos <= 0);
 
             // Agregue el esto de la logica para el juego 1. Juego mayor a 13, 2 juego de dos colores.
+            do {
+                cout << "1. Juego mayor a 13\n2. Juego de dos colores\n0.Salir\n";
+                cin >> opJuego;
+            }while( opJuego != 1 && opJuego !=2 );
             cout << "Por implementar \n";
+
+            //Pasos para empezar a jugar
+            if (controller.jugar( opJuego, idJugador, cantGonzos )){
+                cout << "Felicidades ganaste, quieres seguir perdiendo dinero?" << endl;
+            }
+            else{
+                cout << "Felicidades ganaste un navajazo en la traquea :)" << endl;
+            }
+
+            cout << "Deseas seguir jugando?" << endl;
+            cin >> opcion;
+            //TODO terminar de implementar el jugar de view
+
         } catch (std::domain_error ex){
             cout << ex.what();
         }

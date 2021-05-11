@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/lufe0/CLionProjects/casino/Controller/Controller.cpp" "C:/Users/lufe0/CLionProjects/casino/cmake-build-debug/CMakeFiles/casino.dir/Controller/Controller.cpp.obj"
-  "C:/Users/lufe0/CLionProjects/casino/Model/Casino.cpp" "C:/Users/lufe0/CLionProjects/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Casino.cpp.obj"
-  "C:/Users/lufe0/CLionProjects/casino/Model/DosColores.cpp" "C:/Users/lufe0/CLionProjects/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/DosColores.cpp.obj"
-  "C:/Users/lufe0/CLionProjects/casino/Model/Juego.cpp" "C:/Users/lufe0/CLionProjects/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Juego.cpp.obj"
-  "C:/Users/lufe0/CLionProjects/casino/Model/Jugador.cpp" "C:/Users/lufe0/CLionProjects/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Jugador.cpp.obj"
-  "C:/Users/lufe0/CLionProjects/casino/Model/Mayor13.cpp" "C:/Users/lufe0/CLionProjects/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Mayor13.cpp.obj"
-  "C:/Users/lufe0/CLionProjects/casino/View/View.cpp" "C:/Users/lufe0/CLionProjects/casino/cmake-build-debug/CMakeFiles/casino.dir/View/View.cpp.obj"
-  "C:/Users/lufe0/CLionProjects/casino/main.cpp" "C:/Users/lufe0/CLionProjects/casino/cmake-build-debug/CMakeFiles/casino.dir/main.cpp.obj"
+  "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Controller/Controller.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/Controller/Controller.cpp.obj"
+  "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Casino.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Casino.cpp.obj"
+  "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/DosColores.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/DosColores.cpp.obj"
+  "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Juego.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Juego.cpp.obj"
+  "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Jugador.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Jugador.cpp.obj"
+  "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Mayor13.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Mayor13.cpp.obj"
+  "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/View/View.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/View/View.cpp.obj"
+  "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/main.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

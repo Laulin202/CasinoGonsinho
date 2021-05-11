@@ -15,13 +15,15 @@ Controller::Controller() {
   casino.agregarJuego(juego2);
 
 }
+
+// Se encarga de crear el objeto Jugador con la info ya validada de view
 void Controller::agregarJugador(long id, string nombreJugador, double dinero)
 {
     // Se agrega jugador solo si no existe con anticipacion
     if (casino.verExisteJugador(id) == false){
         // Se convierte el dinero a Gonzos
         float cantGonzos = casino.convertirPesosAGonzos(dinero);
-        Jugador * pJugador = new Jugador (id, nombreJugador, cantGonzos);
+        Jugador* pJugador = new Jugador (id, nombreJugador, cantGonzos);
         casino.agregarJugador(pJugador);
 
     }else {
@@ -30,6 +32,7 @@ void Controller::agregarJugador(long id, string nombreJugador, double dinero)
 }
 
 bool Controller::jugar(int idJuego, long idJugador, float gonzosApostar) {
+    float  resultadoFINAL;
     if (casino.verExisteJugador(idJugador) == false){
         throw std::domain_error("El jugador con la identificacion recibida NO existe, no es posible jugar\n");
     }
@@ -40,19 +43,29 @@ bool Controller::jugar(int idJuego, long idJugador, float gonzosApostar) {
         throw std::domain_error("No tienes saldo suficiente para jugar\n");
     }
     // Si no hay errores se inicia el juego
+
     int posJuego = idJuego -1; // Se corrige la posicion para acceder al juego
-    Juego * pJuegoAJugar = casino.consultarJuegos().at(idJuego-1);
+    Juego* pJuegoAJugar = casino.consultarJuegos().at(idJuego-1);
 
     // Consutlta al jugador, consulta los gonzos iniciales, juega y obtiene el resultado
+    Jugador* pJugador = casino.consultarJugador(idJugador);  //Recordar: este metodo retorna el objeto (el jugador)
+    cout << "Bienvenid@! " << pJugador->getNombre() << " estos son tus datos: "<< endl;
+    pJugador->mostrarInfo();
 
+    resultadoFINAL = pJuegoAJugar->jugar( gonzosApostar );
 
     // Actualiza el saldo del jugador con el resultado
-
+    pJugador->actualizarGonzos(resultadoFINAL);
 
     // Actualiza la cantidad de juegos jugados
-
+    pJugador->aumentarJuegos();
 
     // Retorna verdadero si el jugador ganó y false si el jugador perdio
+
+    if( resultadoFINAL < 0){
+        return false;
+    }
+    return true;
     cout << "Por implementar \n";
 }
 

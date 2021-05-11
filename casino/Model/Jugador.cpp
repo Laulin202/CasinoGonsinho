@@ -24,16 +24,20 @@ Jugador::~Jugador()
 void Jugador::mostrarInfo() {
 
     // Muestra el nombre , la cantidad de gonzos y la cantidad de juegos jugados
-    cout << "Por implementar \n";
+    cout << "I-------------------------I" << endl;
+    cout << "Nombre: " << nombre << endl;
+    cout << "Cant Gonzos: " << cantGonzos << endl;
+    cout << "Cant juegos: " << cantJuegos << endl;
+
 }
 
 void Jugador::aumentarJuegos() {
-    // Incrementa la cantidad de juegos que ha jugado el jugador
-    cout << "Por implementar \n";
+    // Incrementa la cantidad de juegos (canJuegos) que ha jugado el jugador
+    this->cantJuegos++;
 }
 
 void Jugador::actualizarGonzos(float resultadoJuego) {
-    cout << "Por implementar \n";
+    cantGonzos+= resultadoJuego;
 }
 
 const string &Jugador::getNombre() const {
