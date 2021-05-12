@@ -87,24 +87,34 @@ void View:: jugarView(long idJugador) {
                 cout << "1. Juego mayor a 13\n2. Juego de dos colores\n0.Salir\n";
                 cin >> opJuego;
             }while( opJuego != 1 && opJuego !=2 );
-            cout << "Por implementar \n";
 
             //Pasos para empezar a jugar
             if (controller.jugar( opJuego, idJugador, cantGonzos )){
-                cout << "Felicidades ganaste, quieres seguir perdiendo dinero?" << endl;
+                cout << " Estas ardiendo!"<< endl;
             }
             else{
-                cout << "Felicidades ganaste un navajazo en la traquea :)" << endl;
+                cout << "No te rindas!" << endl;
             }
 
             cout << "Deseas seguir jugando?" << endl;
             cin >> opcion;
-            //TODO terminar de implementar el jugar de view
 
         } catch (std::domain_error ex){
             cout << ex.what();
         }
     }while (opcion!=0);
+}
+
+void View::retirarJugador(){
+    long idJugador;
+
+    try {
+        cout << "Digite la id del jugador: " << endl;
+        cin >> idJugador;
+        controller.retirarJugador(idJugador);
+    } catch (std::domain_error ex){
+        cout << ex.what();
+    }
 }
 
 int View::mostrarMenu(){
@@ -114,6 +124,7 @@ int View::mostrarMenu(){
     cout << "2. Jugar" << std::endl;
     cout << "3. Consultar jugador" << std::endl;
     cout << "4. Recargar gonzos" << std::endl;
+    cout << "5. Retirar jugador" << std::endl;
     cout << "0. Salir\n" << std::endl;
     cout << "Digita el numero: ";
     cin >> opcion;
@@ -138,6 +149,9 @@ void View::verPrincipal(){
             case 4:
                 venderGonzos();
                 break;
+            case 5:
+                retirarJugador();
+                break;
             case 0:
                 cout << "Espero la haya pasado bien compadre :D" << endl;
                 break;
@@ -148,7 +162,5 @@ void View::verPrincipal(){
     } while(opcion != 0);
 }
 
-void View::retirarJugador(){
-    cout << "Fase dos, por hacer \n";
-}
+
 

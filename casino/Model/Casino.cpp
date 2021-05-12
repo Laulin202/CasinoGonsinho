@@ -45,9 +45,7 @@ vector<Juego *> &Casino::consultarJuegos() {
 }
 
 void Casino::retirarJugador(long id) {
-    // Investigue como remover el jugador del mapa
-    cout << "Fase dos, por hacer \n";
-    //TODO
+    jugadoresMap.erase(id);
 }
 
 double Casino::convertirGonzosPesos(float gonzos) {

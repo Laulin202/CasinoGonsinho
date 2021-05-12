@@ -6,7 +6,51 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Jugador.cpp
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Controller/Controller.cpp
+Controller.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Controller/Controller.h
+../Model/Mayor13.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Mayor13.h
+../Model/DosColores.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/DosColores.h
+
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Controller/Controller.h
+../Model/Jugador.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Jugador.h
+../Model/Casino.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Casino.h
+iostream
+-
+list
+-
+map
+-
+
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Casino.cpp
+Casino.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Casino.h
+
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Casino.h
+iostream
+-
+string
+-
+vector
+-
+map
+-
+Juego.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Juego.h
+
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/DosColores.h
+Juego.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Juego.h
+cstdlib
+-
+ctime
+-
+
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Juego.h
 Jugador.h
 C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Jugador.h
 
@@ -15,4 +59,20 @@ iostream
 -
 string
 -
+
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Mayor13.h
+Juego.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Juego.h
+cstdlib
+-
+ctime
+-
+
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/View/View.cpp
+View.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/View/View.h
+
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/View/View.h
+../Controller/Controller.h
+C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Controller/Controller.h
 
