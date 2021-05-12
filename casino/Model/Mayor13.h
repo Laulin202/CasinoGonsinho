@@ -11,7 +11,6 @@
 #include<ctime>
 
 class Mayor13 : public Juego {
-
 protected:
     virtual float calcularResultado(float gonzosApostar) override;
 public:

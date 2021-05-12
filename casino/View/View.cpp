@@ -33,6 +33,27 @@ void View::agregarJugador()
     }
 }
 
+void View::mostrarJugador(){
+    long idJug;
+    try{
+        cout << "Digite la ID del jugador que desea consultar: " << endl;
+        cin >> idJug;
+        controller.verInfoJugador(idJug);
+    } catch(std::domain_error ex){
+        cout << ex.what();
+    }
+}
+
+void View::venderGonzos(){
+    long idJug;
+    try{
+        cout << "Digite la ID del jugador: " << endl;
+        cin >> idJug;
+        controller.recargarGonzos(idJug);
+    } catch(std::domain_error ex){
+        cout << ex.what();
+    }
+}
 
 void View::pedirUsuario(){
     try {
@@ -86,44 +107,48 @@ void View:: jugarView(long idJugador) {
     }while (opcion!=0);
 }
 
-int View::mostrarMenu()
-{
+int View::mostrarMenu(){
     int opcion;
     cout << "Menu\n";
     cout << "1. Agregar jugador " << std::endl;
     cout << "2. Jugar" << std::endl;
-    cout << "3. Consultar jugador - pendiente " << std::endl;
-    cout << "4. Vender gonzos - pendiente " << std::endl;
-    cout << "0. Salir\n"
-         << std::endl;
+    cout << "3. Consultar jugador" << std::endl;
+    cout << "4. Recargar gonzos" << std::endl;
+    cout << "0. Salir\n" << std::endl;
     cout << "Digita el numero: ";
     cin >> opcion;
     return opcion;
 }
 
-void View::verPrincipal()
-{
+void View::verPrincipal(){
     int opcion;
-    do
-    {
+    do{
         opcion = mostrarMenu();
         switch (opcion)
         {
-            case 1: agregarJugador();
+            case 1: 
+                agregarJugador();
                 break;
             case 2:
                 pedirUsuario();
                 break;
+            case 3:
+                mostrarJugador();
+                break;
+            case 4:
+                venderGonzos();
+                break;
+            case 0:
+                cout << "Espero la haya pasado bien compadre :D" << endl;
+                break;
+            default:
+                cout << "Seleccione una opcion correcta porfavor :(" << endl;
+                break;
         }
-    } while (opcion != 0);
+    } while(opcion != 0);
 }
 
-void View::mostrarJugador() {
-    // LLama al metodo del controller que muestra los datos
-    cout << "Fase dos, por hacer \n";
-}
-
-void View::retirarJugador() {
+void View::retirarJugador(){
     cout << "Fase dos, por hacer \n";
 }
 
