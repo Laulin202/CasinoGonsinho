@@ -46,10 +46,15 @@ void View::mostrarJugador(){
 
 void View::venderGonzos(){
     long idJug;
+    float dineroRecargar;
     try{
         cout << "Digite la ID del jugador: " << endl;
         cin >> idJug;
-        controller.recargarGonzos(idJug);
+        do{
+            cout << "Digite cuanto dinero desea recargar: " << endl;
+            cin >> dineroRecargar;
+        } while(dineroRecargar <= 0);
+        controller.recargarGonzos(idJug, dineroRecargar);
     } catch(std::domain_error ex){
         cout << ex.what();
     }

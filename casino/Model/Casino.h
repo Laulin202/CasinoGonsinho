@@ -33,6 +33,7 @@ public:
     virtual ~Casino();
     void agregarJuego(Juego *);
     double convertirPesosAGonzos(double dinero);
+    double convertirPesosAGonzos(double dinero, int numeroAleatorio);
     double convertirGonzosPesos(float gonzos);
     vector<Juego*> & consultarJuegos();
     bool verExisteJugador(long id);

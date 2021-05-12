@@ -37,6 +37,19 @@ double Casino::convertirPesosAGonzos(double dinero) {
     return dinero/100;
 }
 
+double Casino::convertirPesosAGonzos(double dinero, int numeroAleatorio) {
+    // Cada 10 mil pesos equivalen a 100 Gonzos
+    // aplicar una potente regla de 3
+    cout << "El numero aleatorio es: " << numeroAleatorio << endl;
+    if(numeroAleatorio > 5){
+        cout << "FELICIDADES!" << endl;
+        dinero = dinero * 2;
+    } else{
+        cout << "NO GANASTE >:)" << endl;
+    }
+    return convertirPesosAGonzos(dinero);
+}
+
 vector<Juego *> &Casino::consultarJuegos() {
     return juegosDisponibles;
 }
@@ -52,8 +65,8 @@ double Casino::convertirGonzosPesos(float gonzos) {
 void Casino::guardarMapa(){
     int n, cantJuegos;
     float cantGonzos;
-    ofstream wf;
-    wf.open("jugadores.dat", ios::out | ios::binary);
+    ofstream wf; //Se crea la variable con la cual voy a cargar el archivo .dat
+    wf.open("jugadores.dat", ios::out | ios::binary); //Se abre el archivo .dat en la variable wf
     n = jugadoresMap.size();
     wf.write((char *) &n, sizeof(int));
     map<long, Jugador*>::iterator itr;
@@ -70,8 +83,8 @@ void Casino::guardarMapa(){
     wf.close();
 }
 
-void Casino::cargarMapa(){
-    int n, cantJuegos;
+void Casino::cargarMapa(){     
+    int n, cantJuegos;        
     float cantGonzos;
     long id;
     string nombre;

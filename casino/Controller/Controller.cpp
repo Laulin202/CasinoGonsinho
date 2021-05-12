@@ -101,25 +101,14 @@ void Controller::retirarJugador(long idJugador) {
     casino.retirarJugador(idJugador);
 }
 
-void Controller::recargarGonzos(long idJugador) {
-    float gonzosRecargar, dineroRecargar, numeroAleatorio;
+void Controller::recargarGonzos(long idJugador, float dineroRecargar) {
+    float gonzosRecargar, numeroAleatorio;
     srand(time(NULL));
-    if (casino.verExisteJugador(idJugador) == false){
+    if (!casino.verExisteJugador(idJugador)){
         throw std::domain_error("El jugador con la identificacion recibida NO existe\n");
     }
-    do{
-        cout << "Digite cuanto dinero desea recargar: " << endl;
-        cin >> dineroRecargar;
-    } while(dineroRecargar <= 0);
     numeroAleatorio = 1+rand()%10;
-    cout << "El numero aleatorio es: " << numeroAleatorio << endl;
-    if(numeroAleatorio > 5){
-        cout << "FELICIDADES!" << endl;
-        dineroRecargar = dineroRecargar * 2;
-    } else{
-        cout << "NO GANASTE >:)" << endl;
-    }
-    gonzosRecargar = casino.convertirPesosAGonzos(dineroRecargar);
+    gonzosRecargar = casino.convertirPesosAGonzos(dineroRecargar, numeroAleatorio);
     Jugador* pJugador = casino.consultarJugador(idJugador);
     pJugador->actualizarGonzos(gonzosRecargar);
 }
