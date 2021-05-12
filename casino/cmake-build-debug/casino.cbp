@@ -118,6 +118,12 @@
 		<Unit filename="C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Mayor13.h">
 			<Option target="casino"/>
 		</Unit>
+		<Unit filename="C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/PiedraPapelTijera.cpp">
+			<Option target="casino"/>
+		</Unit>
+		<Unit filename="C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/PiedraPapelTijera.h">
+			<Option target="casino"/>
+		</Unit>
 		<Unit filename="C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/View/View.cpp">
 			<Option target="casino"/>
 		</Unit>

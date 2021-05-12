@@ -5,14 +5,17 @@
 #include "Controller.h"
 #include "../Model/Mayor13.h"
 #include "../Model/DosColores.h"
+#include "../Model/PiedraPapelTijera.h"
 
 Controller::Controller() {
   this->casino = Casino();
   // Se agregan los juegos disponibles para el casino
   Mayor13 * juego1 = new Mayor13();
   DosColores * juego2 = new DosColores();
+  PiedraPapelTijera * juego3 = new PiedraPapelTijera();
   casino.agregarJuego(juego1);
   casino.agregarJuego(juego2);
+  casino.agregarJuego(juego3);
 
 }
 
@@ -80,7 +83,7 @@ void Controller::verInfoJugador(long idJugador){
 }
 
 bool Controller::verPuedeContinuar(int idJugador) {
-    // En teoría esta excepción no debería salir nunca pero se pone como táctica de programación segura.
+    // En teoría esta excepción no debería salir nunca pero se pone como táctica de programación segura
     if (casino.verExisteJugador(idJugador) == false) {
         throw std::domain_error("El jugador con la identificacion recibida NO existe");
     }

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Juego.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Juego.cpp.obj"
   "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Jugador.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Jugador.cpp.obj"
   "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Mayor13.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/Mayor13.cpp.obj"
+  "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/PiedraPapelTijera.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/Model/PiedraPapelTijera.cpp.obj"
   "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/View/View.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/View/View.cpp.obj"
   "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/main.cpp" "C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/cmake-build-debug/CMakeFiles/casino.dir/main.cpp.obj"
   )

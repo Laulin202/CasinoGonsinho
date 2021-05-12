@@ -9,6 +9,7 @@ CMakeFiles/casino.dir/Controller/Controller.cpp.obj
  C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Juego.h
  C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Jugador.h
  C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Mayor13.h
+ C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/PiedraPapelTijera.h
 CMakeFiles/casino.dir/Model/Casino.cpp.obj
  C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Casino.cpp
  C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Casino.h
@@ -31,6 +32,11 @@ CMakeFiles/casino.dir/Model/Mayor13.cpp.obj
  C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Jugador.h
  C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Mayor13.cpp
  C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Mayor13.h
+CMakeFiles/casino.dir/Model/PiedraPapelTijera.cpp.obj
+ C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Juego.h
+ C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Jugador.h
+ C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/PiedraPapelTijera.cpp
+ C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/PiedraPapelTijera.h
 CMakeFiles/casino.dir/View/View.cpp.obj
  C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Controller/Controller.h
  C:/Users/Laura Leon/OneDrive/Documentos/Git/CasinoGonsinho/casino/Model/Casino.h

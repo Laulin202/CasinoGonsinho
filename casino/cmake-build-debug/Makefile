@@ -303,6 +303,33 @@ Model/Mayor13.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\casino.dir\build.make CMakeFiles/casino.dir/Model/Mayor13.cpp.s
 .PHONY : Model/Mayor13.cpp.s
 
+Model/PiedraPapelTijera.obj: Model/PiedraPapelTijera.cpp.obj
+
+.PHONY : Model/PiedraPapelTijera.obj
+
+# target to build an object file
+Model/PiedraPapelTijera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\casino.dir\build.make CMakeFiles/casino.dir/Model/PiedraPapelTijera.cpp.obj
+.PHONY : Model/PiedraPapelTijera.cpp.obj
+
+Model/PiedraPapelTijera.i: Model/PiedraPapelTijera.cpp.i
+
+.PHONY : Model/PiedraPapelTijera.i
+
+# target to preprocess a source file
+Model/PiedraPapelTijera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\casino.dir\build.make CMakeFiles/casino.dir/Model/PiedraPapelTijera.cpp.i
+.PHONY : Model/PiedraPapelTijera.cpp.i
+
+Model/PiedraPapelTijera.s: Model/PiedraPapelTijera.cpp.s
+
+.PHONY : Model/PiedraPapelTijera.s
+
+# target to generate assembly for a file
+Model/PiedraPapelTijera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\casino.dir\build.make CMakeFiles/casino.dir/Model/PiedraPapelTijera.cpp.s
+.PHONY : Model/PiedraPapelTijera.cpp.s
+
 View/View.obj: View/View.cpp.obj
 
 .PHONY : View/View.obj
@@ -384,6 +411,9 @@ help:
 	@echo ... Model/Mayor13.obj
 	@echo ... Model/Mayor13.i
 	@echo ... Model/Mayor13.s
+	@echo ... Model/PiedraPapelTijera.obj
+	@echo ... Model/PiedraPapelTijera.i
+	@echo ... Model/PiedraPapelTijera.s
 	@echo ... View/View.obj
 	@echo ... View/View.i
 	@echo ... View/View.s

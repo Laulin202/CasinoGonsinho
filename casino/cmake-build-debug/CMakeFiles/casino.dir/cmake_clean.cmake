@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/casino.dir/Model/Juego.cpp.obj"
   "CMakeFiles/casino.dir/Model/Jugador.cpp.obj"
   "CMakeFiles/casino.dir/Model/Mayor13.cpp.obj"
+  "CMakeFiles/casino.dir/Model/PiedraPapelTijera.cpp.obj"
   "CMakeFiles/casino.dir/View/View.cpp.obj"
   "CMakeFiles/casino.dir/main.cpp.obj"
   "casino.exe"

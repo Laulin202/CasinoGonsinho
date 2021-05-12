@@ -89,9 +89,9 @@ void View:: jugarView(long idJugador) {
 
             // Agregue el esto de la logica para el juego 1. Juego mayor a 13, 2 juego de dos colores.
             do {
-                cout << "1. Juego mayor a 13\n2. Juego de dos colores\n0.Salir\n";
+                cout << "1. Juego mayor a 13\n2. Juego de dos colores\n3. Piedra papel o tijera\n0.Salir\n";
                 cin >> opJuego;
-            }while( opJuego != 1 && opJuego !=2 );
+            }while( opJuego != 1 && opJuego !=2 && opJuego !=3 && opJuego !=0);
 
             //Pasos para empezar a jugar
             if (controller.jugar( opJuego, idJugador, cantGonzos )){
@@ -101,7 +101,7 @@ void View:: jugarView(long idJugador) {
                 cout << "No te rindas!" << endl;
             }
 
-            cout << "Deseas seguir jugando?" << endl;
+            cout << "Deseas seguir jugando?\n1.Hagamoslo!\n0.Salir" << endl;
             cin >> opcion;
 
         } catch (std::domain_error ex){

@@ -8,6 +8,7 @@ CMakeFiles/casino.dir/Controller/Controller.cpp.obj: ../Model/DosColores.h
 CMakeFiles/casino.dir/Controller/Controller.cpp.obj: ../Model/Juego.h
 CMakeFiles/casino.dir/Controller/Controller.cpp.obj: ../Model/Jugador.h
 CMakeFiles/casino.dir/Controller/Controller.cpp.obj: ../Model/Mayor13.h
+CMakeFiles/casino.dir/Controller/Controller.cpp.obj: ../Model/PiedraPapelTijera.h
 
 CMakeFiles/casino.dir/Model/Casino.cpp.obj: ../Model/Casino.cpp
 CMakeFiles/casino.dir/Model/Casino.cpp.obj: ../Model/Casino.h
@@ -30,6 +31,11 @@ CMakeFiles/casino.dir/Model/Mayor13.cpp.obj: ../Model/Juego.h
 CMakeFiles/casino.dir/Model/Mayor13.cpp.obj: ../Model/Jugador.h
 CMakeFiles/casino.dir/Model/Mayor13.cpp.obj: ../Model/Mayor13.cpp
 CMakeFiles/casino.dir/Model/Mayor13.cpp.obj: ../Model/Mayor13.h
+
+CMakeFiles/casino.dir/Model/PiedraPapelTijera.cpp.obj: ../Model/Juego.h
+CMakeFiles/casino.dir/Model/PiedraPapelTijera.cpp.obj: ../Model/Jugador.h
+CMakeFiles/casino.dir/Model/PiedraPapelTijera.cpp.obj: ../Model/PiedraPapelTijera.cpp
+CMakeFiles/casino.dir/Model/PiedraPapelTijera.cpp.obj: ../Model/PiedraPapelTijera.h
 
 CMakeFiles/casino.dir/View/View.cpp.obj: ../Controller/Controller.h
 CMakeFiles/casino.dir/View/View.cpp.obj: ../Model/Casino.h
