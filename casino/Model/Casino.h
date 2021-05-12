@@ -6,11 +6,11 @@
 #define CASINO_CASINO_H
 
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
 #include <map>
 #include "Juego.h"
-
 
 using std::cin;
 using std::cout;
@@ -19,6 +19,9 @@ using std::string;
 using std::vector;
 using std::map;
 using std::iterator;
+using std::ofstream;
+using std::ifstream;
+using std::ios;
 
 class Casino {
 private:
@@ -35,7 +38,9 @@ public:
     bool verExisteJugador(long id);
     Jugador * consultarJugador(long id);
     void agregarJugador(Jugador * pJugador);
-    void retirarJugador (long id);
+    void retirarJugador(long id);
+    void guardarMapa();
+    void cargarMapa();
 
 };
 #endif //CASINO_CASINO_H

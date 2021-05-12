@@ -133,6 +133,7 @@ int View::mostrarMenu(){
 
 void View::verPrincipal(){
     int opcion;
+    controller.cargarDatos();
     do{
         opcion = mostrarMenu();
         switch (opcion)
@@ -154,6 +155,7 @@ void View::verPrincipal(){
                 break;
             case 0:
                 cout << "Espero la haya pasado bien compadre :D" << endl;
+                controller.guardarDatos();
                 break;
             default:
                 cout << "Seleccione una opcion correcta porfavor :(" << endl;

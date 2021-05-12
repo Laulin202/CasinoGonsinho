@@ -19,12 +19,9 @@ using std::list;
 
 using std::string;
 
-class Controller
-{
+class Controller{
 private:
-
     Casino casino;
-
 public:
     Controller();
     void agregarJugador(long id, string nombreJugador, double dinero);
@@ -33,5 +30,7 @@ public:
     void verInfoJugador(long idJugador);
     void retirarJugador(long idJugador);
     void recargarGonzos(long idJugador);
+    void guardarDatos();
+    void cargarDatos();
 };
 #endif //CASINO_CONTROLLER_H

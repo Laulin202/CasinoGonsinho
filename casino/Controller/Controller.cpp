@@ -124,3 +124,10 @@ void Controller::recargarGonzos(long idJugador) {
     pJugador->actualizarGonzos(gonzosRecargar);
 }
 
+void Controller::guardarDatos(){
+    casino.guardarMapa();
+}
+
+void Controller::cargarDatos(){
+    casino.cargarMapa();
+}

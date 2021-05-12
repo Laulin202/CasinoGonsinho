@@ -53,6 +53,10 @@ long Jugador::getId() const {
     return id;
 }
 
+int Jugador::getCantJuegos() const {
+    return cantJuegos;
+}
+
 
 
 
