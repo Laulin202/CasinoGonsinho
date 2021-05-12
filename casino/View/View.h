@@ -18,7 +18,7 @@ private:
     void agregarJugador();
     void retirarJugador();
     void mostrarJugador();
-
+    void venderGonzos();
 public:
     View();
     void verPrincipal();

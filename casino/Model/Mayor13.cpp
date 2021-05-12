@@ -4,20 +4,30 @@
 
 #include "Mayor13.h"
 
-float Mayor13::jugar(float gonzosApostar) {
+float Mayor13::jugar(float gonzosApostar){
+    int opc;
+    float gonzoResultado;
     srand(time(NULL));
-
-    cout << "Por implementar, mire el ejemplo en DosColores y la logica a usar en el documento \n";
-
-    return 0;
+    numeroJugador = 1+rand()%13; // Se genera el numero para el usuario
+    do{
+        cout << "Su numero es: " << numeroJugador << endl << "1. Arriesgar\n2. Rendirse" << endl;
+        cin >> opc;
+    } while(opc != 1 && opc != 2);
+    if(opc == 1){
+        numeroCasino = 1+rand()%13; // Se general el numero para el casino
+        gonzoResultado = calcularResultado(gonzosApostar);
+        return gonzoResultado;
+    }
+    return (gonzosApostar/2) * -1;
 }
 
 
-float Mayor13::calcularResultado(float gonzosApostar) {
-    cout << "Por implementar, mire el ejemplo en DosColores y la logica a usar en el documento \n";
-
+float Mayor13::calcularResultado(float gonzosApostar){
+    if(numeroJugador <= numeroCasino){
+        return gonzosApostar * -1;
+    }
+    return gonzosApostar * 2;
 }
 
-Mayor13::~Mayor13() {
-
+Mayor13::~Mayor13(){ 
 }

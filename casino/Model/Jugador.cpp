@@ -28,6 +28,7 @@ void Jugador::mostrarInfo() {
     cout << "Nombre: " << nombre << endl;
     cout << "Cant Gonzos: " << cantGonzos << endl;
     cout << "Cant juegos: " << cantJuegos << endl;
+    cout << "I-------------------------I" << endl;
 
 }
 
