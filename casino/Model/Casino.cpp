@@ -67,20 +67,20 @@ void Casino::guardarMapa(){
     float cantGonzos;
     ofstream wf; //Se crea la variable con la cual voy a cargar el archivo .dat
     wf.open("jugadores.dat", ios::out | ios::binary); //Se abre el archivo .dat en la variable wf
-    n = jugadoresMap.size();
-    wf.write((char *) &n, sizeof(int));
-    map<long, Jugador*>::iterator itr;
+    n = jugadoresMap.size(); //Se guarda el tamanio del mapa en una variable n
+    wf.write((char *) &n, sizeof(int)); //Se escribe el tamanio del mapa en el archivo
+    map<long, Jugador*>::iterator itr; //Se crea el iterador para recorrer el mapa
     for (itr = jugadoresMap.begin(); itr != jugadoresMap.end(); ++itr) {
-        size_t size = itr->second->getNombre().size();
-        wf.write((char *) &itr->first, sizeof(long));
-        wf.write((char *) &size, sizeof(size));
-        wf.write((char *) &itr->second->getNombre()[0], size);
+        size_t size = itr->second->getNombre().size(); //Se guarda en una variable de tipo size_t el size del string nombre de cada jugador
+        wf.write((char *) &itr->first, sizeof(long)); //Se escribe en el archivo el id
+        wf.write((char *) &size, sizeof(size)); //Se escribe en el archivo el size del string nombre
+        wf.write((char *) &itr->second->getNombre()[0], size); //Se escribe en el archivo el nombre del jugador usando el size anteriormente guardado
         cantGonzos = itr->second->getCantGonzos();
-        wf.write((char *) &cantGonzos, sizeof(float));
+        wf.write((char *) &cantGonzos, sizeof(float)); //Se escribe la cantidad de gonzos en el archivo
         cantJuegos = itr->second->getCantJuegos();
-        wf.write((char *) &cantJuegos, sizeof(int));
+        wf.write((char *) &cantJuegos, sizeof(int)); //Se escribe la cantidad de juegos en el archivo
     }
-    wf.close();
+    wf.close(); //Se cierra el archivo
 }
 
 void Casino::cargarMapa(){     
@@ -89,27 +89,27 @@ void Casino::cargarMapa(){
     long id;
     string nombre;
     ifstream rf;
-    rf.open("jugadores.dat", ios::out | ios::binary);
-    if(!rf) {
+    rf.open("jugadores.dat", ios::out | ios::binary); //Se abre el archivo .dat para comenzar a leer
+    if(!rf) { //Se evalua si existe un archivo con ese nombre para abrir
       cout << "No se encontro archivo para cargar!" << endl;
       return;
     }
-    rf.read((char *) &n, sizeof(int));
+    rf.read((char *) &n, sizeof(int)); //Se lee el tamanio del mapa para saber hasta donde se completa
     for(int i = 0; i < n; i++){
-        size_t size;
-        rf.read((char *) &id, sizeof(long));
-        rf.read((char *) &size, sizeof(size));
-        nombre.resize(size);
-        rf.read((char *) &nombre[0], size);
-        rf.read((char *) &cantGonzos, sizeof(float));
-        rf.read((char *) &cantJuegos, sizeof(int));
-        Jugador* pJugador = new Jugador (id, nombre, cantGonzos);
+        size_t size; //Se crea la variable size de tipo size_t
+        rf.read((char *) &id, sizeof(long)); //Se lee el id de cada jugador
+        rf.read((char *) &size, sizeof(size)); //Se lee el tamanio de los strings nombres de cada jugador
+        nombre.resize(size); //Se ajusta el tamanio del string nombre segun el tamanio del nombre guardado
+        rf.read((char *) &nombre[0], size); //Se lee el string nombre
+        rf.read((char *) &cantGonzos, sizeof(float)); //Se lee la cantidad de gonzos
+        rf.read((char *) &cantJuegos, sizeof(int)); //Se lee la cantidad de juegos
+        Jugador* pJugador = new Jugador (id, nombre, cantGonzos); //Se crea el pJugador con los datos leidos
         for(int j = 0; j < cantJuegos; j++){
-            pJugador->aumentarJuegos();
+            pJugador->aumentarJuegos(); //Se recorre la cantidad de juegos para determinar cuantos juegos ha jugado el jugador
         }
-        jugadoresMap[id] = pJugador;
+        jugadoresMap[id] = pJugador; //Se agrega el jugador al mapa
     }
-    rf.close();
+    rf.close(); //Se cierra el archivo
 }
 
 Casino::~Casino() {

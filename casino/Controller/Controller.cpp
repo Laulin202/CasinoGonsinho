@@ -6,6 +6,7 @@
 #include "../Model/Mayor13.h"
 #include "../Model/DosColores.h"
 #include "../Model/PiedraPapelTijera.h"
+#include "../Model/MontyHall.h"
 
 Controller::Controller() {
   this->casino = Casino();
@@ -13,10 +14,11 @@ Controller::Controller() {
   Mayor13 * juego1 = new Mayor13();
   DosColores * juego2 = new DosColores();
   PiedraPapelTijera * juego3 = new PiedraPapelTijera();
+  MontyHall * juego4 = new MontyHall();
   casino.agregarJuego(juego1);
   casino.agregarJuego(juego2);
   casino.agregarJuego(juego3);
-
+  casino.agregarJuego(juego4);
 }
 
 // Se encarga de crear el objeto Jugador con la info ya validada de view

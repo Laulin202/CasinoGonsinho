@@ -10,6 +10,8 @@ PiedraPapelTijera::~PiedraPapelTijera(){
 float PiedraPapelTijera::jugar(float gonzosApostar) {
     int op;
     float gonzoResultado;
+    cantVicCasino = 0;
+    cantVicJugador = 0;
     srand(time(NULL));
     cout << "Bienvenido a piedra papel o tijeras!" << endl;
     cout << "      [ MODO DE JUEGO ]             " << endl;
@@ -47,7 +49,6 @@ float PiedraPapelTijera::jugar(float gonzosApostar) {
 
 
 float PiedraPapelTijera::calcularResultado(float gonzosApostar) {
-
     if (cantVicCasino > cantVicJugador){
         return gonzosApostar * -1;
     }
@@ -61,7 +62,5 @@ float PiedraPapelTijera::calcularResultado(float gonzosApostar) {
                 return gonzosApostar * 2;
         }
     }
-    else if( cantVicCasino == cantVicJugador){
-        return 0;
-    }
+    return 0;
 }
